@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MIS4200Team3.Models.Refer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.receive.firstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyValue)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.receive.firstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyValue)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.referneceID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.referneceID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.referneceID })
+        </td>
+    </tr>
+}
+
+</table>

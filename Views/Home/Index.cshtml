@@ -2,30 +2,47 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div  class="jumbotron">
+    <h1>Centric Consulting</h1>
+    <p class="lead">
+        <h2>Enjoy the people you work with, have fun, and do great work.</h2>
+
+        <h3>Not only do these blocks serve as our model for consulting, but they’ve created a culture that values team unity and collaboration. We enjoy working together, alongside you, to create personalized solutions for your business.</h3>
+    </p>
+    <p><a  href="https://centricconsulting.com/" style="background-color:rgb(255,182,18)" class="btn btn-primary btn-lg"> Centric Conculting Website &raquo;</a></p>
 </div>
 
+
+<!--CORE VALUES-->
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>Centric Core Values</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            <h4>Centric Consulting believes success comes from working together to do good work and serve those around us.</h4> <br />
+            Our core purpose is to create unmatched experiences for clients and employees. An experience like no other is less about the event itself and more about the positive feeling you get from it.
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p><a style="background-color:rgb(255,182,18)" class="btn btn-default" @Html.ActionLink("Centric Core Values", "CoreValues", "Home") &raquo;</a></p>
+        
     </div>
+
+
+    <!--REFER A CO-WORKER-->
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Recognize a Co-worker</h2>
+        <p>
+            At Centric, we not only focus on understanding our values, we want to live through them. When a team member goes above and beyond and truly represents one of our values, they should be recognized for their actions!
+        </p>
+        <p><a style="background-color:rgb(255,182,18)" class="btn btn-default" @Html.ActionLink("Refer Co-worker", "Index", "Refers") &raquo; </a> </p>
+
     </div>
+
+
+
+    <!--GAMIFICATION-->
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>Leader Board and Hall of Fame</h2>
+        <p>See the current standings of your fellow employees!</p>
+        <!--<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>-->
+        <p><a style="background-color:rgb(255,182,18)" class="btn btn-default" @Html.ActionLink("View Leaderboard", "LeaderBoard", "Home") &raquo;</a></p>
     </div>
 </div>

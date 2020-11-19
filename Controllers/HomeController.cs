@@ -26,5 +26,14 @@ namespace MIS4200Team3.Controllers
 
             return View();
         }
+
+        public ActionResult CoreValues()
+        {
+            return View();
+        }
+
+        public ActionResult LeaderBoard()
+        { return View();
+        }
     }
 }
