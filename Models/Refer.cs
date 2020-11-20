@@ -14,7 +14,7 @@ namespace MIS4200Team3.Models
     {
         [Key]
 
-        public int referneceID { get; set; }
+        public int referenceID { get; set; }
 
         //[Display(Name = "Centric Core Value")]
         //[Required(ErrorMessage = "Core value is required")]

@@ -179,6 +179,7 @@
     </Compile>
     <Compile Include="Migrations\MISContext\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ForeignKeyAttribute.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Leaderboard.cs" />
     <Compile Include="Models\ManageViewModels.cs" />

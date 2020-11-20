@@ -10,7 +10,7 @@ namespace MIS4200Team3.Models
     public class Profile
     {
         [Required]
-        [Key]        public Guid ID { get; set; }
+        [Key] public Guid ID { get; set; }
 
 
 
@@ -101,6 +101,17 @@ namespace MIS4200Team3.Models
             CEO
 
         }
-        public virtual Refer refer { get; set; }
+       
 
-    } }
+        [ForeignKey("receiveID")]
+        public ICollection<Refer> refers { get; set; }
+
+        [ForeignKey("refersGivenID")]
+        public ICollection<Refer> refersGiven { get; set; }
+     
+
+    }
+
+
+}
+
