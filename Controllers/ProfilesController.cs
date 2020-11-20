@@ -38,6 +38,7 @@ namespace MIS4200Team3.Controllers
         }
 
         // GET: Profiles/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -66,6 +67,7 @@ namespace MIS4200Team3.Controllers
         }
 
         // GET: Profiles/Edit/5
+        [Authorize]
         public ActionResult Edit(Guid? id)
         {
             if (id == null)
@@ -97,6 +99,7 @@ namespace MIS4200Team3.Controllers
         }
 
         // GET: Profiles/Delete/5
+        [Authorize]
         public ActionResult Delete(Guid? id)
         {
             if (id == null)

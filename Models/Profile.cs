@@ -25,6 +25,7 @@ namespace MIS4200Team3.Models
         [StringLength(30)]
         public string lastName { get; set; }
 
+        [Display(Name = "Employee Name")]
         public string fullName { get
             { return firstName + " " + lastName; }
         }
@@ -82,7 +83,6 @@ namespace MIS4200Team3.Models
             Louisville,
             Miamai,
             Seattle,
-            St_Louis,
             Tampa
         }
 
@@ -106,7 +106,7 @@ namespace MIS4200Team3.Models
         [ForeignKey("receiveID")]
         public ICollection<Refer> refers { get; set; }
 
-        [ForeignKey("refersGivenID")]
+       [ForeignKey("refersGivenID")]
         public ICollection<Refer> refersGiven { get; set; }
      
 

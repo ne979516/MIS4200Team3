@@ -48,6 +48,7 @@ namespace MIS4200Team3.Models
 
 
         public virtual Profile profile { get; set; }
+
         [ForeignKey("receiveID")] 
         public virtual Profile receive { get; set; }
         
@@ -77,14 +78,17 @@ namespace MIS4200Team3.Models
 
         public enum CompanyValues
         {
-            Willing_to_help,
-            Treating_clients_like_friends,
-            Doing_what_it_takes,
-            Putting_you_first
+            Delivery_Excellence, 
+            Integrity_and_Openness,
+            Stewardship,
+            Exceptional_Culture,
+            Passion,
+            Innovate,
+            Balanced_Life
         }
     }
 
-    internal class DisplayNameAttribute : Attribute
-    {
-    }
+    //internal class DisplayNameAttribute : Attribute
+    //{
+    //}
 }

@@ -4,19 +4,38 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Live Values Display</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.receive.firstName)
+            @Html.DisplayNameFor(model => model.receive.fullName)
         </th>
-        <th>
+        @*<th>
             @Html.DisplayNameFor(model => model.ID)
-        </th>
+        </th>*@
         <th>
             @Html.DisplayNameFor(model => model.CompanyValue)
         </th>
@@ -26,19 +45,19 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.receive.firstName)
+            @Html.DisplayFor(modelItem => item.receive.fullName)
         </td>
-        <td>
+        @*<td>
             @Html.DisplayFor(modelItem => item.ID)
-        </td>
+        </td>*@
         <td>
             @Html.DisplayFor(modelItem => item.CompanyValue)
         </td>
-        <td>
+        @*<td>
             @Html.ActionLink("Edit", "Edit", new { id=item.referneceID }) |
             @Html.ActionLink("Details", "Details", new { id=item.referneceID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.referneceID })
-        </td>
+        </td>*@
     </tr>
 }
 
